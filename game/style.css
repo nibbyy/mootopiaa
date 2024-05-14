@@ -1,0 +1,91 @@
+.bubbler-one-regular {
+    font-family: "Bubbler One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .bubblegum-sans-regular {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rubik-bubbles-regular {
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  html {
+    font-size: 10px;
+    background-color: black;
+  }
+  
+  h1 {
+    font-family: "Rubik Bubbles", system-ui;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 60px;
+    text-align: center;
+    color: saddlebrown;
+    text-shadow: 3px 3px 1px black;
+  }
+  
+  p,
+  li {
+    text-align: center;
+    font-family: "Bubblegum Sans", sans-serif;
+    text-shadow: 3px 3px 1px black;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: lightgrey;
+  }
+  
+  a {
+    color: saddlebrown;
+  }
+  
+  body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: hsla(116, 27%, 28%, .75);
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+  
+  #timeInfo {
+    display: flex; /* Activates Flexbox layout */
+    justify-content: space-between; /* Distributes space evenly between the children */
+    align-items: center; /* Vertically centers the items */
+    padding: 10px;
+    margin: 10px 0;
+    font-family: "Bubblegum Sans", sans-serif;
+    text-shadow: 3px 3px 1px black;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: lightgrey;
+  }
+  
+  #seasonYearDisplay {
+    flex-grow: 1; /* Allows this element to grow and take up extra space on the left */
+    text-align: left; /* Aligns the text to the left */
+    font-family: "Bubblegum Sans", sans-serif;
+    text-shadow: 3px 3px 1px black;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: lightgrey;
+  }
+  
+  #hourDayDisplay {
+    flex-grow: 2; /* Gives more growth ability, making it take up more space if available */
+    text-align: center; /* Centers the text */
+    font-family: "Bubblegum Sans", sans-serif;
+    text-shadow: 3px 3px 1px black;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: lightgrey;
+  }

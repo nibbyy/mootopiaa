@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="game/style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mootopia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Bubbler+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <style>
+        #buttonContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+<body>
+  <h1>Mootopia</h1>
+  <div id="timeInfo">
+    <span id="seasonYearDisplay"></span>
+    <span id="hourDayDisplay"></span>
+  </div>
+  <div id="progressContainer" style="width: 100%; background-color: grey;">
+    <div id="progressBar" style="width: 0%; height:30px; background-color: green;"></div>
+  </div>
+  <p>Progress: <span id="clickCount"></span></p>
+  <div id="buttonContainer"></div>
+  <div id="inventory"></div>
+
+  <script type="module" src="game/game.js"></script>
+</body>

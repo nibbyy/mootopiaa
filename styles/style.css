@@ -1,0 +1,60 @@
+.bubbler-one-regular {
+    font-family: "Bubbler One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .bubblegum-sans-regular {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rubik-bubbles-regular {
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  html {
+    font-size: 10px;
+    background-color: black;
+  }
+  
+  h1 {
+    font-family: "Rubik Bubbles", system-ui;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 60px;
+    text-align: center;
+    color: saddlebrown;
+    text-shadow: 3px 3px 1px black;
+  }
+  
+  p,
+  li {
+    text-align: center;
+    font-family: "Bubblegum Sans", sans-serif;
+    text-shadow: 3px 3px 1px black;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: lightgrey;
+  }
+  
+  a {
+    color: saddlebrown;
+  }
+  
+  body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: hsla(116, 27%, 28%, .75);
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+  }
