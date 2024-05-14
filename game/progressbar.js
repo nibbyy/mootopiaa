@@ -14,5 +14,4 @@ export function incrementProgress(amount) {
 
 function updateProgressBar() {
     document.getElementById('progressBar').style.width = `${progress * 10}%`;
-    document.getElementById('clickCount').innerText = `${progress}/10`;
 }
