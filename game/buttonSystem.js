@@ -1,5 +1,6 @@
 import { incrementProgress } from './progressbar.js';
 import { tryGetDirt } from './inventory.js';
+import { clearLandPiece } from './landSystem.js';
 
 // Total click tracker for achievements/rewards
 let totalLandClicks = 0;
@@ -16,8 +17,10 @@ export function createButton(buttonId, buttonText, itemName, containerId) {
     incrementProgress(1);
     // Clear Land Progress separated from Progress Bar
     clearLandClicks++;
-    if (clearLandClicks > 9) {
+    if (clearLandClicks >= 10) {
       clearLandClicks = 0;
+      // Land Clearing:
+      clearLandPiece();
     };
     updateLandProgress();
   });
