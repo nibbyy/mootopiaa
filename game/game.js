@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     createButton('clearLandButton', 'Clean Yard', 'Dirt', 'buttonContainer');
     setInterval(() => {
       const { currentHour, amPm, currentWeekDay, currentSeason, currentYear } = getCurrentTime();
-      document.getElementById('seasonYearDisplay').innerText = `${currentSeason} of Year ${currentYear}`;
+      document.getElementById('seasonYearDisplay').innerText = `Week ${currentWeek}, ${currentSeason}, Year ${currentYear}`;
       document.getElementById('hourDayDisplay').innerText = `It is ${currentHour} ${amPm} on ${currentWeekDay}.`;
     }, 500);
 });

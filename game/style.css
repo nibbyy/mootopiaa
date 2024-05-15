@@ -89,3 +89,14 @@
     letter-spacing: 1px;
     color: lightgrey;
   }
+
+  #buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #clearLandButton, clearLandProgress {
+    padding: 5px;
+    font-size: 12px;
+  }

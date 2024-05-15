@@ -3,6 +3,7 @@ const seasonsOfYear = ["Spring", "Summer", "Autumn", "Winter"];
 let currentDayIndex = 1;
 let currentSeasonIndex = 0;
 let currentHour = 6;
+let currentWeek = 1;
 let amPm = 'AM';
 let dayTimeStart = 6;
 let dayTimeEnd = 9;
@@ -34,14 +35,22 @@ function incrementDay() {
   currentDayIndex++;
   if (currentDayIndex >= daysOfWeek.length) {
     currentDayIndex = 0;
-    incrementSeason();
+    incrementWeek();
   }
   currentWeekDay = daysOfWeek[currentDayIndex];
   console.log('It is now ${currentWeekDay}.');
 }
 
+incrementWeek() {
+  currentWeek++;
+  if (currentWeek > 4) {
+    currentWeek = 1;
+    incrementSeason();
+  }
+}
+
 function incrementSeason() {
-  currentSeasonIndex + 1;
+  currentSeasonIndex++;
   if (currentSeasonIndex >= seasonsOfYear.length) {
     currentSeasonIndex = 1;
     incrementYear();
@@ -55,5 +64,5 @@ function incrementYear() {
 
 // Function called in game.js for time display
 export function getCurrentTime() {
-    return { currentHour, amPm, currentWeekDay, currentSeason, currentYear };
+    return { currentHour, amPm, currentWeek, currentWeekDay, currentSeason, currentYear };
 }
