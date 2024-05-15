@@ -104,8 +104,9 @@
 #landBar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 10px;
+  flex-direction: row;
 }
 
 #landStatus {
