@@ -4,6 +4,8 @@ import { createButton } from './buttonSystem.js';
 import { weekNumber } from './timeSystem.js';
 import { updateLandDisplay } from './landSystem.js';
 
+// Test
+
 // Game initialization: (Probably a better way to do this)
 document.addEventListener('DOMContentLoaded', () => {
     setupInventoryDisplay();
